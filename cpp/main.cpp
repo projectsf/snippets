@@ -6,8 +6,6 @@
 using namespace std;
 using namespace boost;
 
-
-
 int main()
 {
 	string pppConfFileName("./input/ppp.conf");
@@ -28,10 +26,8 @@ int main()
     }
 	pppConfFile.clear();
 
+	//write out new attributes to file
 	pppConfFile.seekp(0, ios::beg);
 	pppConfFile << "What's up dog?" << endl; 
-	//write out new attributes to file
-
-	
 }
 
